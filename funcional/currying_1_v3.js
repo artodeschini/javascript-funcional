@@ -26,6 +26,7 @@ function aplicarValidacao(fn) {
 
 const forcarTamanhoPadrao = textoComTamanhoEntre(4)(255)
 const forcarNomeProdutoValido = forcarTamanhoPadrao('Nome produto inválido!')
+// // Lazy Evaluation
 const validarNomeProduto = aplicarValidacao(forcarNomeProdutoValido)
 
 const p1 = { nome: 'A', preco: 14.99, desc: 0.25 }

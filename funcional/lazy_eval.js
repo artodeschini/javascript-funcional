@@ -25,7 +25,7 @@ console.log(eager(3, 300))
 console.timeEnd('#1')
 
 console.time('#2')
-const lazy3 = lazy(3)
+const lazy3 = lazy(3) // dessa forma consegue ser mais eficiente e mais rapido pois processo lazy3 uam vez só
 console.log(lazy3(100))
 console.log(lazy3(200))
 console.log(lazy3(300))

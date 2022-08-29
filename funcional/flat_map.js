@@ -5,6 +5,7 @@ const letrasAninhadas = [
     ['!', '!', '!', '!']
 ]
 
+//aqui o flat remove infinitamente os elementos de matriz tornando só um vetor de uma dimensao
 const letras = letrasAninhadas.flat(Infinity)
 
 const resultado = letras
