@@ -10,6 +10,8 @@ function getObservable() {
     })
 }
 
+// gera duas chamadas distinas
+// trabalha como unicast
 const obs = getObservable()
 obs.subscribe(console.log)
 obs.subscribe(console.log)
@@ -24,6 +26,7 @@ function getSubject() {
     return sub
 }
 
+// gera um e distribui para os interessados como broadcast
 const sub = getSubject()
 sub.subscribe(console.log)
 sub.subscribe(console.log)

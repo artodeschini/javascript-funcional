@@ -1,3 +1,5 @@
+// extensao Quokka.js do vs para verificar valores
+
 Number.prototype.log = function() { console.log(+this) }
 Function.prototype.log = function() { console.log(this.toString()) }
 

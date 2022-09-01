@@ -7,7 +7,7 @@ function createPipeableOperator(operatorFn) {
             source.subscribe({
                 next: sub.next,
                 error: sub.error || (e => subscriber.error(e)),
-                complete: sub.complete || (e => subscriber.complete(e)),
+                complete: sub.complete || (e => subscriber.complete()),
             })
         })
     }

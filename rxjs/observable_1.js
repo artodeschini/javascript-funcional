@@ -6,12 +6,14 @@ const promise = new Promise(resolve => {
 
 promise.then(console.log)
 
+// é como uma Promise porém posso chamar quantos dados eu queira chamando next
 const obs = new Observable(subscriber => {
     subscriber.next('Observer')
     subscriber.next('é')
     subscriber.next('bem')
     setTimeout(() => {
         subscriber.next('legal!')
+        // enverra o subscriber e identifica que nao ira gera mais nenhum valor
         subscriber.complete()
     }, 1000)
 })

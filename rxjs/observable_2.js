@@ -1,3 +1,4 @@
+// const { Observable, noop } = require('rxjs')
 const { Observable } = require('rxjs')
 
 const obs = Observable.create(subscriber => {
@@ -16,6 +17,7 @@ const obs = Observable.create(subscriber => {
 // obs.subscribe(
 //     valor => console.log(`Valor: ${valor}`),
 //     erro => console.log(`Erro: ${erro}`),
+//     noop, var console: Console // ignora o erro precisa importar
 //     () => console.log('Fim!')
 // )
 
